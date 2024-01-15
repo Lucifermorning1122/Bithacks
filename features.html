@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features</title>
+<link href="features.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1>Unlock Your Potential with Our Features</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#facilities">State-of-the-Art Facilities</a></li>
+    <li><a href="#leaderboard">Talent Leaderboard</a></li>
+    <li><a href="#career-support">Career Support</a></li>
+    <li><a href="#mentorship">Mentorship Programs</a></li>
+    <li><a href="#research-opportunities">Research Opportunities</a></li>
+    
+  </ul>
+</nav>
+
+<div class="container">
+  <section class="feature-box" id="facilities">
+    <h2>State-of-the-Art Facilities</h2>
+    <p>Experience unparalleled learning with our cutting-edge facilities, including advanced labs, libraries, and interactive learning spaces that foster creativity and exploration.</p>
+  </section>
+
+  <section class="feature-box" id="leaderboard">
+    <h2>Talent Leaderboard</h2>
+    <p>Showcase your skills and talents on our dynamic leaderboard, connecting you with potential employers who recognize and appreciate your capabilities. Open doors to exciting career opportunities.</p>
+  </section>
+
+  <section class="feature-box" id="career-support">
+    <h2>Career Support</h2>
+    <p>Gain a competitive edge in the job market with our dedicated career support services, including resume workshops, interview preparation, and networking events that connect you with industry professionals.</p>
+  </section>
+
+  <section class="feature-box" id="mentorship">
+    <h2>Mentorship Programs</h2>
+    <p>Benefit from personalized guidance and mentorship by industry experts who help you navigate your academic journey, discover your strengths, and chart a path to success.</p>
+  </section>
+
+  <section class="feature-box" id="research-opportunities">
+    <h2>Research Opportunities</h2>
+    <p>Engage in groundbreaking research projects alongside esteemed faculty members, contributing to advancements in various fields and expanding your knowledge beyond the classroom.</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2023 INFO PORTAL. All rights reserved.</p>
+</footer>
+</body>
+</html>
+<script>
+   
+const urlParams = new URLSearchParams(window.location.search);
+
+const who = urlParams.get('who');
+
+const rollnumber = urlParams.get('rollnumber');
+const links = document.querySelectorAll('a');
+
+
+if (who === "faculty") {
+    var staffElement = document.getElementById("staff");
+    staffElement.innerHTML = "<a class='nav-link btn-outline-primary rounded-pill px-3' href='facultyevent.html'>events by you</a>";
+};
+links.forEach(link => {
+    const originalHref = link.getAttribute('href');
+    link.href = `${originalHref}?who=${who}&rollnumber=${rollnumber}`;
+});
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    
+        <link rel="stylesheet" href="create-event.css">
+    
+</head>
+<body>
+    <h1>Create Event</h1>
+    <form id="event-form" action="create-event.php?id=IN7183" method="post" enctype="multipart/form-data">
+        <label for="event-name">Event Name:</label>
+        <input name="eventname" type="text" id="event-name" required>
+        <br>
+        <label for="event-type">Event Type:</label>
+        <select name="eventtype" id="event-type" required>
+            <option value="workshop">Workshop</option>
+            <option value="conference">Conference</option>
+            <option value="seminar">Seminar</option>
+        </select>
+        <br>
+        <label for="start-date">Start Date:</label>
+        <input name="sdate" type="date" id="start-date" required>
+        <br>
+        <label for="end-date">End Date:</label>
+        <input name="edate" type="date" id="end-date" required>
+        <br>
+        <label for="start-time">Start Time:</label>
+        <input name="stime" type="time" id="start-time" required>
+        <br>
+        <label for="event-endtime">End Time:</label>
+        <input name="etime" type="time" id="event-endtime" required>
+        <br>
+        <label for="venue">Venue:</label>
+        <input name="venue" type="text" id="venue" required>
+        <br>
+        <label for="event-description">Event Description:</label>
+        <textarea name="description" id="event-description" rows="4" required style="width: 50%;"></textarea>
+        <br>
+        <label for="eligibility">Eligibility:</label>
+        <textarea name="eligibility" id="eligibility" rows="4" required  style="width: 50%;"></textarea>
+        <br>
+        <label for="event-brochure">Event Brochure (link):</label>
+        <input name="filename" type="text" id="event-brochure">
+        <br>
+        <button type="submit">Create Event</button>
+    </form>
+</body>
+</html>
+<script> 
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    const who = urlParams.get('who');
+    
+    const rollnumber = urlParams.get('rollnumber');
+    const links = document.querySelectorAll('a');
+    
+if (who === "faculty") {
+    var staffElement = document.getElementById("staff");
+    staffElement.innerHTML = "<a class='nav-link btn-outline-primary rounded-pill px-3' href='facultyevent.html'>events by you</a>";
+};
+links.forEach(link => {
+    const originalHref = link.getAttribute('href');
+    link.href = `${originalHref}?who=${who}&rollnumber=${rollnumber}`;
+});
+    </script>

@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.body,h1{
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+#leaderboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+#leaderboard-list li {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+}
+
+#leaderboard-list li span {
+  font-weight: bold;
+}

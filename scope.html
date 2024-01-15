@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scope</title>
+<style>
+    #welcome{
+padding: 40px;
+overflow: hidden;
+margin: 0 auto;
+width: 50vw;
+font-weight: 600;
+line-height: 0.8;
+font-size: 60px;
+text-align: left;
+font-size: 3rem;
+color: #EDEEE9;
+font-family: 'Georgia';
+animation: animateShadow 5s infinite;
+}
+.my-element {
+display: inline-block;
+margin: 0 0.5rem;
+
+  animation:fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+</style>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<!-- Load Require CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font CSS -->
+<link href="assets/css/boxicon.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Load Tempalte CSS -->
+<link rel="stylesheet" href="scope.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+<!-- Header -->
+<nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="index.html">
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <span class="text-dark h4">INFO PORTAL</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="event.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="leaderboard.html">Leader Board</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                </div>
+            </div>
+        </div>
+</nav>
+<div id="welcome">
+    <h1 class="animate__animated animate__fadeInDown" style="color: rgb(164, 92, 232);font-weight: bold;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Welcome to our Optimistic Website!</h1>
+    <p class="animate__animated animate__fadeInDown" style="color:#2E2532;font-weight: bold;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Discover a world of possibilities and positivity.</p>
+</div>
+
+<main>
+    <section class="update-card">
+<h2>Scope of events</h2>
+<br>
+<p>An information portal dedicated to academic events and updates provides a dynamic platform for students, educators, and enthusiasts to stay informed about the latest developments, activities, and happenings in the academic world. The portal aims to deliver a wide range of content, resources, and services centered around various educational events. The scope of such an info portal could include:
+<br><br>
+    <b>Event Listings:</b>
+    <br>
+    A comprehensive calendar of upcoming academic events, including conferences, seminars, workshops, webinars, and symposiums.
+    Details such as event dates, locations, registration information, and keynote speakers.
+
+    <br><br>
+    <b>Event Highlights:</b>
+    <br> 
+    In-depth coverage of recent academic events, summarizing key discussions, presentations, and outcomes.
+    Photo galleries and videos capturing the essence of these events.
+    <br> <br>
+    <b>Event Categories:</b>
+    <br> 
+    Segmentation of events by academic discipline, enabling users to find relevant events in their fields of interest.
+    Specialized tracks or themes within larger events.
+    Guest Speakers and Experts:
+<br>    
+</p>
+<p> </p>
+    </section>
+   
+    <!-- Add more update cards as needed -->
+</main>
+<footer class="bg-secondary pt-4">
+    <div class="container">
+        <div class="row py-4">
+
+            <div class="col-lg-3 col-12 align-left">
+                <a class="navbar-brand" href="index.html">
+                    <i class='bx bx-buildings bx-sm text-light'></i>
+                    <span class="text-light h5">INFO PORTAL</span> <span class="text-light h5 semi-bold-600"></span>
+                </a>
+                <p class="text-light my-lg-4 my-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut.
+                </p>
+                <ul class="list-inline footer-icons light-300">
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="http://facebook.com/">
+                            <i class='bx bxl-facebook-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                            <i class='bx bxl-linkedin-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                            <i class='bx bxl-whatsapp-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                            <i class='bx bxl-flickr-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.medium.com/">
+                            <i class='bx bxl-medium-square bx-md' ></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h3 class="h4 pb-lg-3 text-light light-300">Our Portal</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">Home</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="event.html">Events</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="leaderboard.html">Leader Board</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Our Works</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Scope</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Types of Academic Activities</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Features</a>
+                    </li>
+                  
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:010-020-0340">+91 9786055633</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:info@company.com">info@company.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-100 bg-primary py-3">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-start text-center text-light light-300">
+                        © Copyright 2023 <strong>Info Portal</strong> Company. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-end text-center text-light light-300">
+                        Designed by <a rel="sponsored" class="text-decoration-none text-light" href="" target="_blank"><strong>FUTURE DEVELOPERS</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>

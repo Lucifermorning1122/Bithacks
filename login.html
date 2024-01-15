@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOGIN</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(to right, rgb(64, 29, 239) , rgb(214, 38, 245));
+      text-align: center;
+      padding-top: 100px;
+    }
+    
+    .container {
+      width: 80%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+    
+    .container h2 {
+      margin-bottom: 20px;
+      color: #9d67e0;
+    }
+    
+    .container input[type="email"],
+    .container input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+   
+    .container input[type="submit"] {
+      width: 60%;
+      margin-left: 20%;
+      padding: 10px;
+      background-color: #9d67e0;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-bottom: 20px; 
+    }
+    
+    .container a {
+      display: block;
+      margin-bottom: 20px;
+      color: #151219;
+      text-decoration: none;
+      text-align: center;
+    }
+  
+    .container a:hover {
+      text-decoration: underline;
+    }
+    
+    .account-password {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      margin-left: 10px;
+    }
+    
+    .left-image {
+      width: 100%;
+      height: auto;
+      max-width: 700px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+      .container {
+        width: 400px;
+      }
+    }
+  </style>
+</head>
+<body> 
+  
+  <div class="container">
+    <h2 style="text-align: center;">INFO-PORTAL</h2>
+    <h3 style="text-align: center;"><b>A Journey through Eloquent Information</b></h3>
+    <form action="login.php" method="POST">
+      <label for="username">Email ID:</label>
+      <br>
+      <input type="email" name="emailid" placeholder="Enter your Email ID" required><br>
+      <label for="password">Password:</label>
+      <br>
+      <input type="password" name="password" placeholder="Enter your password" required><br>
+      <div class="account-password">
+        <div class="dont-have-an" id="dontHaveAn"><a href="register.html">Don't have an account</a></div>
+        <div class="forgot-password" id="forgotPasswordText"><a href="#">Faculty Login</a></div>
+      </div>
+      <input type="submit" value="Login">
+      <a href="admin-login.html" style="color: black;">Are you an Admin? Admin login</a>
+    </form>
+ </div>
+</body>
+</html>

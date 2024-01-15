@@ -1,0 +1,105 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.ctfassets.net/co0pvta7hzrh/1HOajBVHsh7xunfUnjpDNE/c94d271e8f90a6bf6016fc1d275d7a74/e_commerce_registration_form_template_thumb.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);}
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="checkbox"] {
+    margin-bottom: 10px;
+  }
+  
+  #register_btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signIn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signIn a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .sumbit button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 0 15px;
+    border-radius: 4px;
+    color: #6200ee;
+    background: transparent;
+    line-height: 1.15;
+    font-size: 14px;
+    height: 36px;
+    word-spacing: 0px;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 64px;
+    border: 1px solid #6200ee;
+    text-align: center;
+    transition: background 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .sumbit :hover {
+    background: #f4f4f4;
+  }

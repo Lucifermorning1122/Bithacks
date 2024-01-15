@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources.css">
+</head>
+<body>
+  <div class="card">
+    <div class="content">
+      <p class="heading">Newsletter
+      </p><p class="para">
+        Our AI newsletter brings you the latest news and research from the world of artificial intelligence. We cover a wide range of topics, from machine learning to natural language processing to robotics. We also explore the ethical implications of AI and how it is being used to solve real-world problems.
+      </p>
+      <button class="btn">Read more</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <p class="heading">Highlight's of AI
+      </p><p class="para">
+        The future of AI is full of possibilities, but it also presents challenges. We need to be prepared for the ethical implications of AI, such as the potential for bias and discrimination. We also need to ensure that AI is used for good and not for harm.
+      </p>
+      <button class="btn">Read more</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <p class="heading">Seminar Specials
+      </p><p class="para">
+        Learn about the latest advances in artificial intelligence and how they are changing the world. Explore the ethical implications of AI and how we can ensure that it is used for good. Join a community of AI enthusiasts and learn from the experts. Get inspired by the latest AI innovations and become an AI leader who helps shape the future of this technology.
+      </p>
+      <button class="btn">Read more</button>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+   
+const urlParams = new URLSearchParams(window.location.search);
+
+const who = urlParams.get('who');
+
+const rollnumber = urlParams.get('rollnumber');
+const links = document.querySelectorAll('a');
+
+// Loop through each link and update the href attribute
+links.forEach(link => {
+    const originalHref = link.getAttribute('href');
+    link.href = `${originalHref}?who=${who}&rollnumber=${rollnumber}`;
+});
+</script>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Purple Buzz HTML Template with Bootstrap 5 Beta 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="event.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+
+
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+body {
+margin: 0;
+padding: 0px;
+background-color: #6366E2 ;
+}
+.top{
+  height: 100vh;
+  margin: 20px;
+}
+.top-content{ 
+  height: 80vh;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 10px;
+  overflow-y: hidden;
+  padding: 30px;
+}
+.top-content p{
+  position: relative;
+  color: hsl(0, 0%, 68%);
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+  letter-spacing: 7px;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+    color: white;
+    font-size: x-large;
+    
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1200px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.button-container
+{
+gap: 100px;
+justify-content: center;
+display: flex;
+
+}
+.button-container button
+{
+padding: 30px 50px;
+}
+    
+      
+     .body {
+            margin: 0;
+            padding: 70px;
+            background-image: linear-gradient(to right, #fffbd5, #b20a2c);}
+        .button-container {
+            display: flex;
+            gap: 100px; /* Adjust the gap as needed */
+            justify-content: center;
+          
+        }
+
+
+.btn1
+{
+
+background-color: rgb(12, 17, 39);
+border-radius: 50px;
+color: aliceblue;
+font-family: sans-serif;
+font-weight: bold;
+font-size: medium;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.btn2
+{
+background-color: rgb(12, 17, 39);
+border-radius: 30px;
+color: aliceblue;
+font-family: sans-serif;
+font-weight: bold;
+font-size: medium;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.btn3
+{
+background-color: rgb(12, 17, 39);
+border-radius: 50px;
+color: aliceblue;
+font-family: sans-serif;
+font-weight: bold; font-size: medium;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+.btn4
+{
+background-color: rgb(12, 17, 39);
+border-radius: 50px; 
+color: aliceblue;
+font-family: sans-serif;
+font-weight: bold;
+font-size: medium;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.btn5
+{
+background-color: rgb(12, 17, 39);
+border-radius: 50px; 
+color: aliceblue;
+font-family: sans-serif;
+font-weight: bold;
+font-size: medium;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover,.btn5:hover{
+    transform: scale(1.2);
+    background-color: rgba(241, 249, 248, 0.338);
+    color: black;
+    transition-duration: 0.5s;
+}
+#createevent{
+  display: none;
+}
+        #workshop,#seminar,#clubactivities,#conference
+        {
+            height: 100vh;
+        }
+
+        .event-cards {
+display: flex;
+justify-content: center;
+gap: 20px;
+        }
+.event-cards {
+  display: flex;
+  gap: 20px;
+  flex-direction: row; /* Arrange cards vertically */
+    align-items: center; /* Center cards horizontally */
+
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.card-content {
+    padding: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card-content p {
+    margin: 10px 0;
+    color: #777;
+}
+
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.btn:hover {
+background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="index.html">
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <span class="text-dark h4">INFO PORTAL</span> <span class="text-primary h4"></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="event.html">Events</a>
+                        </li>
+                        <li class="nav-item" id="staff">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="leaderboard.html" >Leader board</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="top" >
+  
+  <div class="button-container" >
+    <a href="#conference"><button class="btn1" type="button">CONFERENCE</button></a>
+    <a href="#workshop"><button class="btn2" type="button">WORKSHOPS</button></a>
+    <a href="#seminar"><button class="btn3" type="button">SEMINAR</button></a>
+    <a href="#clubactivity"><button class="btn4" type="button">CLUB ACTIVITIES</button></a>
+    <a href="create-event.html"><button class="btn5" id="createevent" type="button">CREATE AN EVENT</button></a>
+  </div>
+  <div class="top-content">
+    <p>Unveiling the Spectrum of Knowledge and Exploration: A Fusion of Conferences, Workshops, Seminars, and Club Activities<br>
+</p>
+<p>conference: Prepare to be captivated by our distinguished speakers and visionaries who will grace the conference stage.</p>
+<p>Workshops: Immerse yourself in the realm of experiential learning through our diverse range of workshops.</p>
+<p>Seminars: Our seminars are intellectual crossroads where luminaries and experts converge to dissect critical topics.</p>
+<p>Club Activities: Fuel your passion and connect with kindred spirits through our vibrant club activities.</p>
+  </div>
+</div>`
+<h1 style="color: white; text-align: center;font-weight: bold;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">EVENTS</h1>
+
+<div id="conference">
+  <div class="event-cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>Event 1</h2>
+          <p>Date: July 15, 2023</p>
+          <p>Location: Example Venue</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h2>Event 2</h2>
+          <p>Date: August 10, 2023</p>
+          <p>Location: Another Venue</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+<div id="workshop">
+    <div class="event-cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>Event 1</h2>
+          <p>Date: July 15, 2023</p>
+          <p>Location: Example Venue</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h2>Event 2</h2>
+          <p>Date: August 10, 2023</p>
+          <p>Location: Another Venue</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+  </div>
+</div>
+<div id="seminar">
+  <div class="event-cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>Event 1</h2>
+          <p>Date: July 15, 2023</p>
+          <p>Location: Example Venue</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h2>Event 2</h2>
+          <p>Date: August 10, 2023</p>
+          <p>Location: Another Venue</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+  </div>
+</div>
+<div id="clubactivity">
+  <div class="event-cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>Event 1</h2>
+          <p>Date: July 15, 2023</p>
+          <p>Location: Example Venue</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h2>Event 2</h2>
+          <p>Date: August 10, 2023</p>
+          <p>Location: Another Venue</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
+<script>
+
+function fetchconference() {
+  
+var urlParams = new URLSearchParams(window.location.search);
+var rollnumber = urlParams.get('rollnumber');
+    var showconference = document.getElementById('conference');
+    
+    var event = "conference";
+    var xhr = new XMLHttpRequest();
+xhr.open('GET', 'fetchevent.php?event=' + event + '&rollnumber=' + rollnumber, true);
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          showconference.innerHTML = xhr.responseText;
+
+        }
+    };
+    xhr.send();
+}
+function fetchworkshop() {
+  
+var urlParams = new URLSearchParams(window.location.search);
+var rollnumber = urlParams.get('rollnumber');
+    var showworkshop = document.getElementById('workshop');
+    
+    var event = "workshop";
+    var xhr = new XMLHttpRequest();
+xhr.open('GET', 'fetchevent.php?event=' + event + '&rollnumber=' + rollnumber, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          showworkshop.innerHTML = xhr.responseText;
+
+        }
+    };
+    xhr.send();
+}
+function fetchseminar() {
+  
+var urlParams = new URLSearchParams(window.location.search);
+var rollnumber = urlParams.get('rollnumber');
+    var showseminar = document.getElementById('seminar');
+    
+    var event = "seminar";
+    var xhr = new XMLHttpRequest();
+xhr.open('GET', 'fetchevent.php?event=' + event + '&rollnumber=' + rollnumber, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          showseminar.innerHTML = xhr.responseText;
+
+        }
+    };
+    xhr.send();
+}
+function fetchclubactivity() {
+  
+var urlParams = new URLSearchParams(window.location.search);
+var rollnumber = urlParams.get('rollnumber');
+    var showclubactivity = document.getElementById('clubactivity');
+    
+    var event = "clubactivity";
+    var xhr = new XMLHttpRequest();
+xhr.open('GET', 'fetchevent.php?event=' + event + '&rollnumber=' + rollnumber, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          showclubactivity.innerHTML = xhr.responseText;
+
+        }
+    };
+    xhr.send();
+}
+fetchconference();
+fetchseminar();
+fetchworkshop();
+fetchclubactivity();
+
+const urlParams = new URLSearchParams(window.location.search);
+
+const who = urlParams.get('who');
+if(who == "faculty"){
+  document.getElementById('createevent').style.display='block';
+}
+
+if (who === "faculty") {
+    var staffElement = document.getElementById("staff");
+    staffElement.innerHTML = "<a class='nav-link btn-outline-primary rounded-pill px-3' href='facultyevent.html'>events by you</a>";
+};
+links.forEach(link => {
+    const originalHref = link.getAttribute('href');
+    link.href = `${originalHref}?who=${who}&rollnumber=${rollnumber}`;
+});
+</script>

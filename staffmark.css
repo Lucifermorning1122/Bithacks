@@ -1,0 +1,227 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+nav .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.3rem 4rem;
+  background: #fff;
+  height: 70px;
+}
+
+nav .wrapper .left,
+nav .wrapper .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav .wrapper .left{
+  padding-left: 3rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+nav .wrapper .logo i{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #0a66c2;
+}
+
+nav .wrapper .left .input{
+  background: rgb(237, 245, 246);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+nav .wrapper .left .input input[type='search']{
+  width: 15rem;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  background: transparent;
+}
+
+nav .wrapper .left .input input[type='search']::placeholder{
+  font-size: 0.8rem;
+  color: rgb(49, 49, 49);
+  font-weight: 100;
+}
+
+nav .wrapper .left .input i{
+  font-size: 0.8rem;
+  color: gray;
+}
+
+nav .wrapper .right .home,
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notification,
+nav .wrapper .right .me,
+nav .wrapper .right .work{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+nav .wrapper .right .home,
+nav .wrapper .right .network:hover,
+nav .wrapper .right .jobs:hover,
+nav .wrapper .right .message:hover,
+nav .wrapper .right .notification:hover,
+nav .wrapper .right .me .down:hover,
+nav .wrapper .right .work .down:hover{
+  color: #000;
+}
+
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notification,
+nav .wrapper .right .work{
+  color: gray;
+  
+}
+
+nav .wrapper .right .home i,
+nav .wrapper .right .network i,
+nav .wrapper .right .jobs i,
+nav .wrapper .right .message i,
+nav .wrapper .right .notification i{
+  font-size: 1.2rem;
+}
+
+
+nav .wrapper .right .me .down,
+nav .wrapper .right .work .down{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: gray;
+}
+nav .wrapper .right .me i:first-child{
+  background: gray;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper a{
+  text-decoration: none;
+  font-size: 0.7rem;
+  width: 7rem;
+  text-align: center;
+  cursor: pointer;
+  color: gray;
+}
+
+.wrapper a:hover{
+  text-decoration: underline;
+}
+
+.navbar-brand{
+  font-size: 2rem;
+  font-family: 'lobster', cursive;
+  color: black;
+}
+.navbar-brand:hover{
+  color: black;
+}
+.nav-link {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+}
+.nav-link:hover{
+  color: black;
+}
+.search{
+  height: 40px;
+  width: 80%;
+  border-radius: 60px;
+  outline: none;
+  margin-right: -35px;
+  font-family: 'Rubik', sans-serif;
+  border: 2px solid rgb(248, 26, 92);
+}
+.btn0{
+  height: 40px;
+  width: 40%;
+  outline: none;
+  border: none;
+  background: rgb(248, 26, 92);
+  color: white;
+  border-radius: 60px;
+  font-weight: 700;
+}
+.main h1{
+  font-size: 4rem;
+  font-weight: 400;
+}
+.main h2{
+  font-size: 4rem;
+  font-weight: 400;
+}
+.btn1{
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: rgb(248, 26, 92);
+  color: white;
+  font-weight: 700;
+  border-radius: 60px;
+}
+
+nav .wrapper .right {
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+/* Your existing CSS styles */
+/* ... */
+
+/* Adjust alignment of navigation items */
+nav .wrapper .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+/* Adjust font weight and size for navigation items */
+nav .wrapper .right .nav-item h6 a {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Align logout to the right corner */
+nav .wrapper .right a {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+/* Continue with your existing CSS styles */
+/* ... */

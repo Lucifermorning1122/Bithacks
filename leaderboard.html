@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('https://i.ytimg.com/vi/A6vlG4B9dGM/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.leaderboard {
+    display: flex;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+    
+}
+
+
+.leaderboard h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 0 5px;
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+            width: 75%;
+		  
+        }
+
+.box {
+    align-items: center;
+    width: 300px;
+    margin:  10px;
+    border: 2px solid #333;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.gold {
+    background-color: #FFD700;
+    width: 250px;
+    height: 350px;
+    font-size: 24px;
+    text-align: center;
+    background-image: linear-gradient(45deg,rgba(237, 230, 22, 0.959),rgba(0, 0, 0, 0.2)),url('https://i.pinimg.com/564x/7f/6f/90/7f6f904b7060e6c069b081b130603d9e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.silver {
+    background-color: #C0C0C0;
+    width: 50px;
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(45deg,rgba(240, 240, 227, 0.959),rgba(0, 0, 0, 0.2)),url('https://thumbs.dreamstime.com/z/silver-second-place-trophy-isolated-white-background-d-render-85639777.jpg?w=768');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.bronze {
+    background-color: #CD7F32;
+    width: 50px;
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(45deg,rgba(225, 164, 72, 0.959),rgba(0, 0, 0, 0.2)),url('https://img.freepik.com/premium-photo/winner-award-cube-bronze-laurel-wreath-podium-stage-pedestal-with-bronzer-number-three-third-place-white-background-3d-rendering_476612-15911.jpg?w=2000');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.position {
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+}
+
+.name {
+    align-items: center;
+    text-align: center;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0 5px;
+			position: absolute;
+			bottom: -50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+            width: 75%;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        th, td:first-child {
+            padding-left: 30px;
+        }
+
+        td:last-child {
+            padding-right: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .leaderboard {
+                width: 100%;
+            }
+            th, td {
+                padding: 10px;
+            }
+            th, td:first-child {
+                padding-left: 10px;
+            }
+            td:last-child {
+                padding-right: 10px;
+            }
+        }
+
+        
+
+</style>
+<body>
+
+    <div class="leaderboard">
+        <h1 style="text-align: center;">Leaderboard</h1>
+        <div class="box silver">
+            <b><span class="position">2nd</span><br><br></b>
+            <b><span class="name">John Doe</span><br><br></b>
+            <b><span class="score">800</span><br></b>
+        </div>
+        <div class="box gold">
+            <b><p><span class="position">1st</span><br></p></b>
+            <b><p><span class="name">Harithvarakesan</span><br></p></b>
+            <b><p><span class="score">1000</span></p></b>
+        </div>
+        <div class="box bronze">
+            <b><span class="position">3rd</span><br><br></b>
+            <b><span class="name">Bob Johnson</span><br><br></b>
+            <b><span class="score">600</span><br></b>
+        </div>
+    </div>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4</td>
+                <td>Player 4</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Player 5</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Player 6</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Player 7</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Player 8</td>
+                <td>200</td>
+            </tr>
+            <!-- Add more rows for additional players -->
+        </tbody>
+    </table>
+    
+    
+</body>
+</html>
+
+

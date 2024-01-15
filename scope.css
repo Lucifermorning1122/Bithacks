@@ -1,0 +1,107 @@
+body {
+  height: 100vh;
+  background: #EDEEE9;
+  margin: 0;
+}
+
+#welcome {
+  padding: 40px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 50vw;
+  font-weight: 600;
+  line-height: 0.8;
+  font-size: 60px;
+  text-align: left;
+  font-size: 3rem;
+  color: #EDEEE9;
+  font-family: 'Georgia';
+  animation: animateShadow 5s infinite;
+}
+
+@keyframes animateShadow {
+  0% {
+    text-shadow: makelongshadow(#D92525, #F25C05, #88A61B, #0E3D59, #572D8C);
+  }
+  20% {
+    text-shadow: makelongshadow(#F25C05, #88A61B, #0E3D59, #572D8C, #D92525);
+  }
+  40% {
+    text-shadow: makelongshadow(#88A61B, #0E3D59, #572D8C, #D92525, #F25C05);
+  }
+  60% {
+    text-shadow: makelongshadow(#0E3D59, #572D8C, #D92525, #F25C05, #88A61B);
+  }
+  80% {
+    text-shadow: makelongshadow(#572D8C, #D92525, #F25C05, #88A61B, #0E3D59);
+  }
+  100% {
+    text-shadow: makelongshadow(#D92525, #F25C05, #88A61B, #0E3D59, #572D8C);
+  }
+}
+
+@function makelongshadow($color, $color2, $color3, $color4, $color5) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 20 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color};
+  }
+  @for $i from 21 through 40 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color2};
+  }
+  @for $i from 41 through 60 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color3};
+  }
+  @for $i from 61 through 80 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color4};
+  }
+  @for $i from 81 through 100 {
+    $val: #{$val}, -#{$i}px #{$i}px #{$color5};
+  }
+  @return $val;
+}
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.update-card {
+  border: 1px solid #ddd;
+  padding: 4rem;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.update-card h2 {
+  color: #333;
+}
+
+.date {
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
